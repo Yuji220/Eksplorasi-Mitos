@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorasi Mitos dan Legenda Urban Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Homepage Section -->
+    <section id="homepage">
+        <div class="homepage-content">
+            <h1>Selamat Datang di Eksplorasi Mitos dan Legenda Urban Indonesia</h1>
+            <p>Jelajahi kisah-kisah misterius dan legenda urban yang berkembang di Indonesia. Temukan cerita menakutkan, mitos kuno, dan legenda yang telah menjadi bagian dari budaya kita.</p>
+            <div class="homepage-features">
+                <div class="feature">
+                    <h3>🕵️‍♂️ Jelajahi Mitos</h3>
+                    <p>Temukan berbagai mitos dari berbagai daerah di Indonesia</p>
+                </div>
+                <div class="feature">
+                    <h3>🏙️ Legenda Urban</h3>
+                    <p>Kisah-kisah misterius yang berkembang di kota modern</p>
+                </div>
+                <div class="feature">
+                    <h3>🧠 Kuis Interaktif</h3>
+                    <p>Test pengetahuanmu tentang mitos dan legenda</p>
+                </div>
+                <div class="feature">
+                    <h3>🛍️ Merchandise</h3>
+                    <p>Beli merchandise unik dengan tema mitos dan legenda</p>
+                </div>
+            </div>
+            <button id="enter-site">Masuk ke Eksplorasi</button>
+        </div>
+    </section>
+
+    <header class="hidden">
+        <h1 id="typing-text">Eksplorasi Mitos dan Legenda Urban Indonesia</h1>
+        <p>Jelajahi kisah-kisah misterius dan legenda urban yang berkembang di Indonesia</p>
+        <div id="scroll-progress"></div>
+    </header>
+
+    <nav class="hidden">
+        <div class="nav-filters">
+            <button id="filter-all">Semua</button>
+            <button id="filter-mitos">Mitos</button>
+            <button id="filter-legenda">Legenda Urban</button>
+            <button id="filter-favorites">❤️ Favorit</button>
+        </div>
+        <input type="text" id="search" placeholder="Cari mitos atau legenda...">
+        <div class="nav-actions">
+            <button id="random-legend">🎲 Acak</button>
+            <button id="dark-mode-toggle">🌙 Mode Gelap</button>
+            <button id="music-toggle">🎵 Musik</button>
+            <button id="haunted-mode">👻 Mode Angker</button>
+            <button id="show-quiz">🧠 Kuis</button>
+            <button id="show-merchandise">🛍️ Merchandise</button>
+            <button id="back-to-homepage">🏠 Homepage</button>
+        </div>
+    </nav>
+
+    <main id="content" class="hidden">
+        <section class="legend" data-type="mitos">
+            <img src="kuntilanak.jpg" alt="Ilustrasi Kuntilanak">
+            <h2>Mitos Kuntilanak</h2>
+            <p>Kuntilanak adalah roh wanita jahat yang sering muncul sebagai wanita cantik dengan rambut panjang menutupi wajahnya. Mitos ini berkembang di berbagai daerah di Indonesia.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="kuntilanak">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="kuntilanak">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="kuntilanak">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="kuntilanak">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="kuntilanak">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="kuntilanak">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Kuntilanak diyakini sebagai roh wanita yang meninggal saat melahirkan atau dibunuh. Ia sering muncul di malam hari dan menjerit seperti bayi menangis untuk menarik perhatian korban.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="legenda">
+            <img src="pocong.jpg" alt="Ilustrasi Pocong">
+            <h2>Legenda Urban Pocong</h2>
+            <p>Pocong adalah mayat yang dikafani dan dikubur, namun rohnya tidak tenang sehingga bangkit dan melompat-lompat mencari jalan.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="pocong">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="pocong">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="pocong">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="pocong">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="pocong">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="pocong">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Legenda ini sering dikaitkan dengan prosesi pemakaman yang tidak sempurna. Pocong diyakini akan terus melompat hingga kain kafannya disobek atau ia menemukan kedamaian.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="mitos">
+            <img src="tuyul.jpg" alt="Ilustrasi Tuyul">
+            <h2>Mitos Tuyul</h2>
+            <p>Tuyul adalah makhluk kecil seperti anak-anak yang digunakan oleh dukun untuk mencuri uang.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="tuyul">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="tuyul">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="tuyul">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="tuyul">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="tuyul">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="tuyul">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Tuyul biasanya digambarkan sebagai anak kecil telanjang dengan rambut panjang. Ia bisa menyusup ke rumah orang untuk mengambil uang dan membawanya kepada majikannya.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="legenda">
+            <img src="kuyang.jpg" alt="Ilustrasi Kuyang">
+            <h2>Legenda Urban Kuyang</h2>
+            <p>Kuyang adalah roh wanita yang keluar dari tubuhnya saat tidur, meninggalkan tubuh kosong.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="kuyang">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="kuyang">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="kuyang">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="kuyang">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="kuyang">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="kuyang">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Kuyang sering dikaitkan dengan praktik ilmu hitam. Ia terbang di malam hari mencari korban, terutama wanita hamil atau bayi.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="mitos">
+            <img src="genderuwo.jpg" alt="Ilustrasi Genderuwo">
+            <h2>Mitos Genderuwo</h2>
+            <p>Genderuwo adalah makhluk besar berbulu yang hidup di hutan dan sering mengganggu manusia.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="genderuwo">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="genderuwo">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="genderuwo">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="genderuwo">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="genderuwo">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="genderuwo">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Genderuwo diyakini sebagai penjaga hutan. Ia bisa berubah bentuk dan sering muncul sebagai pria tampan untuk menarik perhatian wanita.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="mitos">
+            <img src="wewegombel.jpg" alt="Ilustrasi Wewe Gombel">
+            <h2>Mitos Wewe Gombel</h2>
+            <p>Wewe Gombel adalah roh jahat yang sering muncul di malam hari dengan penampilan menyeramkan.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="wewegombel">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="wewegombel">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="wewegombel">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="wewegombel">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="wewegombel">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="wewegombel">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Wewe Gombel diyakini sebagai roh wanita yang meninggal tragis. Ia sering mengganggu orang yang lewat di jalanan sepi dengan penampilan mengerikan.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="legenda">
+            <img src="susterngesot.jpg" alt="Ilustrasi Suster Ngesot">
+            <h2>Legenda Urban Suster Ngesot</h2>
+            <p>Suster Ngesot adalah legenda urban tentang hantu perawat yang menyeret korbannya ke bawah tempat tidur.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="susterngesot">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="susterngesot">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="susterngesot">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="susterngesot">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="susterngesot">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="susterngesot">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Legenda ini sering dikisahkan di rumah sakit atau tempat-tempat terpencil. Suster Ngesot muncul dengan seragam perawat dan menarik kaki korban ke bawah tempat tidur.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="mitos">
+            <img src="nyirorokidul.jpg" alt="Ilustrasi Nyi Roro Kidul">
+            <h2>Mitos Nyi Roro Kidul</h2>
+            <p>Nyi Roro Kidul adalah ratu laut selatan yang diyakini sebagai penguasa pantai selatan Jawa.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="nyirorokidul">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="nyirorokidul">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="nyirorokidul">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="nyirorokidul">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="nyirorokidul">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="nyirorokidul">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Nyi Roro Kidul adalah sosok mitis yang sering dikaitkan dengan kerajaan Pajajaran. Ia diyakini sebagai penjaga laut dan sering muncul sebagai wanita cantik berbaju hijau.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="legenda">
+            <img src="hantujepang.jpg" alt="Ilustrasi Hantu Jepang">
+            <h2>Legenda Urban Hantu Jepang</h2>
+            <p>Hantu Jepang adalah legenda tentang roh tentara Jepang yang masih berkeliaran di Indonesia.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="hantujepang">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="hantujepang">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="hantujepang">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="hantujepang">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="hantujepang">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="hantujepang">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Legenda ini berkembang pasca-Perang Dunia II. Hantu Jepang sering digambarkan sebagai tentara dengan seragam compang-camping yang mencari jalan pulang.</p>
+            </div>
+        </section>
+
+        <section class="legend" data-type="mitos">
+            <img src="rangda.jpg" alt="Ilustrasi Rangda">
+            <h2>Mitos Rangda</h2>
+            <p>Rangda adalah ratu iblis dalam mitologi Bali yang sering digambarkan sebagai sosok menakutkan.</p>
+            <div class="legend-actions">
+                <button class="like-btn" data-legend="rangda">👍 <span class="like-count">0</span></button>
+                <button class="dislike-btn" data-legend="rangda">👎 <span class="dislike-count">0</span></button>
+                <button class="favorite-btn" data-legend="rangda">🤍</button>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="facebook" data-legend="rangda">📘</button>
+                    <button class="share-btn" data-platform="twitter" data-legend="rangda">🐦</button>
+                    <button class="share-btn" data-platform="whatsapp" data-legend="rangda">💬</button>
+                </div>
+            </div>
+            <button class="read-more">Baca Selengkapnya</button>
+            <div class="details hidden">
+                <p>Rangda adalah tokoh antagonis dalam cerita Kecak dan Tari Barong. Ia sering dilawan oleh Barong, simbol kebaikan, dalam pertarungan abadi antara baik dan jahat.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eksplorasi Mitos dan Legenda Urban Indonesia. Dibuat dengan ❤️ untuk pendidikan dan hiburan.</p>
+    </footer>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="hidden">
+        <h2>Kuis Mitos dan Legenda</h2>
+        <div id="quiz-container">
+            <div id="question-container">
+                <h3 id="question"></h3>
+                <div id="answers"></div>
+            </div>
+            <div id="quiz-controls">
+                <button id="next-btn" class="hidden">Pertanyaan Berikutnya</button>
+                <button id="restart-btn" class="hidden">Mulai Lagi</button>
+            </div>
+            <div id="score-container" class="hidden">
+                <h3>Skor Anda: <span id="score">0</span>/<span id="total-questions">0</span></h3>
+                <p id="result-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandise Section -->
+    <section id="merchandise-section" class="hidden">
+        <h2>🛍️ Merchandise Mitos dan Legenda</h2>
+        <div id="merchandise-container">
+            <div class="merchandise-item">
+                <img src="bajukuntilanak.jpg" alt="Kaos Kuntilanak">
+                <h3>Kaos Kuntilanak</h3>
+                <p>Kaos bergambar Kuntilanak dengan desain menakutkan. Bahan cotton combed 30s, nyaman dipakai.</p>
+                <div class="price">Rp 85.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+            <div class="merchandise-item">
+                <img src="mugpocong.jpg" alt="Mug Pocong">
+                <h3>Mug Pocong</h3>
+                <p>Mug keramik dengan ilustrasi Pocong melompat. Kapasitas 350ml, cocok untuk kopi atau teh.</p>
+                <div class="price">Rp 45.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+            <div class="merchandise-item">
+                <img src="stikertuyul.jpg" alt="Stiker Tuyul">
+                <h3>Stiker Pack Tuyul</h3>
+                <p>Pack stiker vinyl dengan berbagai ilustrasi Tuyul lucu dan menakutkan. Waterproof dan tahan lama.</p>
+                <div class="price">Rp 25.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+            <div class="merchandise-item">
+                <img src="postergenderuwo.jpg" alt="Poster Genderuwo">
+                <h3>Poster Genderuwo</h3>
+                <p>Poster A3 dengan ilustrasi Genderuwo mistis. Cocok untuk dekorasi kamar atau ruang kerja.</p>
+                <div class="price">Rp 35.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+            <div class="merchandise-item">
+                <img src="kalungnyirorokidul.jpg" alt="Kalung Nyi Roro Kidul">
+                <h3>Kalung Nyi Roro Kidul</h3>
+                <p>Kalung dengan liontin bergambar Nyi Roro Kidul. Terbuat dari stainless steel, anti karat.</p>
+                <div class="price">Rp 75.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+            <div class="merchandise-item">
+                <img src="bukurangda.jpg" alt="Buku komik berwarna tentang legenda Rangda dari Bali, menampilkan ratu iblis dengan ekspresi menakutkan dan menggambarkan cerita mitologi Bali yang dramatis dan misterius">
+                <h3>Buku Cerita Rangda</h3>
+                <p>Buku komik tentang legenda Rangda dari Bali. Ilustrasi penuh warna dengan cerita lengkap.</p>
+                <div class="price">Rp 55.000</div>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-summary"></p>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+
+    <!-- Merchandise Purchase Modal -->
+    <div id="purchase-modal">
+        <div class="purchase-modal-content">
+            <span class="purchase-close">&times;</span>
+            <h2 id="purchase-title">Konfirmasi Pembelian</h2>
+            <div id="purchase-item-info">
+                <img id="purchase-image" src="" alt="Item">
+                <div id="purchase-details">
+                    <h3 id="purchase-item-name"></h3>
+                    <p id="purchase-item-description"></p>
+                    <div class="price" id="purchase-price"></div>
+                </div>
+            </div>
+            <div class="quantity-section">
+                <label for="quantity">Jumlah:</label>
+                <div class="quantity-controls">
+                    <button id="decrease-qty">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-qty">+</button>
+                </div>
+            </div>
+            <div class="total-section">
+                <strong>Total: <span id="total-price">Rp 0</span></strong>
+            </div>
+            <div class="payment-section">
+                <h4>Metode Pembayaran:</h4>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="transfer" checked>
+                        <span>Transfer Bank</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="ewallet">
+                        <span>E-Wallet (GoPay, OVO, Dana)</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cod">
+                        <span>Cash on Delivery</span>
+                    </label>
+                </div>
+            </div>
+            <div class="purchase-actions">
+                <button id="confirm-purchase" class="confirm-btn">Konfirmasi Pembelian</button>
+                <button id="cancel-purchase" class="cancel-btn">Batal</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Floating Action Button -->
+    <div id="fab">
+        <button id="fab-toggle">⚡</button>
+        <div id="fab-menu" class="hidden">
+            <button id="fab-random">🎲</button>
+            <button id="fab-dark">🌙</button>
+            <button id="fab-music">🎵</button>
+            <button id="fab-haunted">👻</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
